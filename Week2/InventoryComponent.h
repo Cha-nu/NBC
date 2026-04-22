@@ -16,19 +16,19 @@ class BLUEPRINTPRACTICE_API UInventoryComponent : public UActorComponent
 public:
     UInventoryComponent();
 
-    // 1. TArray: °¡¹æ (¾ÆÀÌÅÛ ID¸¦ ¼ø¼­´ë·Î ÀúÀå)
+    // 1. TArray: ê°€ë°© (ì•„ì´í…œ IDë¥¼ ìˆœì„œëŒ€ë¡œ ì €ì¥)
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
     TArray<FName> InventoryArray;
 
-    // 2. TMap: ¾ÆÀÌÅÛ µ¥ÀÌÅÍº£ÀÌ½º (ID¸¦ Key·Î »ó¼¼ Á¤º¸ °Ë»ö)
+    // 2. TMap: ì•„ì´í…œ ë°ì´í„°ë² ì´ìŠ¤ (IDë¥¼ Keyë¡œ ìƒì„¸ ì •ë³´ ê²€ìƒ‰)
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
     TMap<FName, FItemData> ItemDatabase;
 
-    // 3. TSet: È¹µæÇÑ ÄªÈ£ (Áßº¹ ¾ø´Â °íÀ¯ ÄªÈ£ ¸ñ·Ï)
+    // 3. TSet: íšë“í•œ ì¹­í˜¸ (ì¤‘ë³µ ì—†ëŠ” ê³ ìœ  ì¹­í˜¸ ëª©ë¡)
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
     TSet<FString> AcquiredTitles;
 
-    // ±â´É ÇÔ¼ö
+    // ê¸°ëŠ¥ í•¨ìˆ˜
 	UFUNCTION(BlueprintCallable, Category = "Inventory")
     void AddItemToInventory(FName ItemID);
 
