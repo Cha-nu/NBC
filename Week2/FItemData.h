@@ -18,7 +18,7 @@ struct FItemData
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
     FString Description;
 
-    // ÀÌ ¾ÆÀÌÅÛÀ» »ç¿ëÇÏ±â À§ÇØ ÇÊ¿äÇÑ ÄªÈ£
+    // ì´ ì•„ì´í…œì„ ì‚¬ìš©í•˜ê¸° ìœ„í•´ í•„ìš”í•œ ì¹­í˜¸
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
     FString RequiredTitle;
 
